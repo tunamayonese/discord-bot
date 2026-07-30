@@ -19,8 +19,7 @@ A simple discord bot built with discord.py that allows the authorized users to p
 - Admin permissions
 
 
-# STEPS
-Installation
+# Installation
 1. Clone the repository
 ```bash
 git clone https://github.com/USERNAME/REPOSITORY.git
@@ -34,19 +33,19 @@ pip install discord.py python-dotenv
 
 3. Create a Discord Bot
 
-  1. Visit the Discord Developer Portal:
+  1) Visit the Discord Developer Portal:
      https://discord.com/developers/applications
 
-  2. Click **New Application**
+  2) Click **New Application**
 
-  3. Navigate to **Bot**
+  3) Navigate to **Bot**
 
-  4. Click **Add Bot**
+  4) Click **Add Bot**
 
-  5. Under **Privileged Gateway Intents**, enable:
+  5) Under **Privileged Gateway Intents**, enable:
       - Server Members Intent
 
-  6. Copy your Bot Token.
+  6) Copy your Bot Token.
 
 4. Invite the Bot
 Go to:
@@ -56,12 +55,10 @@ OAuth2
 ```
 
 Select:
-
-  Scopes
+  *Scope*
   - bot
   - applications.commands
-
-  Permissions
+  *Permissions*
   - Send Messages
   - Embed Links
   - Manage Roles (optional)
@@ -86,34 +83,21 @@ TOKEN=MTExMjIyMzMz...
 ```
 
 
-Running the Bot
-
+# Running the Bot
 ```bash
 python bot.py
 ```
-
-or
-
-```bash
-python3 bot.py
-```
-
 You should see:
-
 ```
-Logged in as YourBot
+Logged in as (YourBot)
 Synced 1 slash commands.
 ```
-
-
-Commands
-
-### /announce
-
+**Command:**
+/announce
+functionality:
 Posts a custom embed.
 
-Arguments
-
+**Arguments**
 | Argument | Description |
 |----------|-------------|
 | channel | Destination channel |
@@ -122,37 +106,8 @@ Arguments
 | logo | Thumbnail image URL (optional) |
 | image | Banner image URL (optional) |
 
----
 
-
-Example
-
-Title
-
-```
-Security Forces Headquarters
-```
-
-Message
-
-```
-Welcome to the Air Force Security Forces Command.
-```
-
-Logo
-
-```
-https://example.com/logo.png
-```
-
-Image
-
-```
-https://example.com/banner.png
-
-
-## Project Structure
-
+**Project Structure**
 ```
 .
 ├── bot.py
@@ -161,14 +116,10 @@ https://example.com/banner.png
 └── README.md
 ```
 
----
 
 ## Notes
-
 - Discord slash command text inputs are **single-line**.
 - Multi-line announcements require Discord **Modals**, which are not included in this basic version.
 - Only users with the required permissions or roles should have access to the `/announce` command.
-
----
 
 
