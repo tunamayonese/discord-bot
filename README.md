@@ -93,10 +93,12 @@ Logged in as (YourBot)
 Synced 1 slash commands.
 ```
 # Sample Results
+![image alt](https://github.com/tunamayonese/discord-bot/blob/505c4a1f87c26673ac01138f72726c4bd8435e8e/example_1.png)
+![image alt](https://github.com/tunamayonese/discord-bot/blob/505c4a1f87c26673ac01138f72726c4bd8435e8e/example_2.png)
 ![image alt](https://github.com/tunamayonese/discord-bot/blob/7260b95d366b89ad22aa3e96fb9b51f27bb5aa2e/example.png)
 
 **Command:**
-/announce
+`/announce`
 Functionality:
 Posts a custom embed.
 
