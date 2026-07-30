@@ -92,10 +92,8 @@ You should see:
 Logged in as (YourBot)
 Synced 1 slash commands.
 ```
-Results Sample
+# Sample Results
 ![image alt](https://github.com/tunamayonese/discord-bot/blob/7260b95d366b89ad22aa3e96fb9b51f27bb5aa2e/example.png)
-
-
 
 **Command:**
 /announce
