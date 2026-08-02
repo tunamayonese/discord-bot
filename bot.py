@@ -32,6 +32,7 @@ async def on_ready():
     logo="Thumbnail image URL (optional)",
     image="Large image URL (optional)"
 )
+
 async def announce(
     interaction: discord.Interaction,
     channel: discord.TextChannel,
@@ -40,6 +41,15 @@ async def announce(
     logo: str = "",
     image: str = ""
 ):
+    allowed_role = "ROLE HERE"
+
+    if not any(role.name == allowed_role for role in interaction.user.roles):
+        await interaction.response.send_message(
+            "❌ You do not have permission to use this command.",
+            ephemeral=True
+        )
+        return
+    
     message = message.replace("\\n", "\n")
     embed = discord.Embed(
         title=title,
